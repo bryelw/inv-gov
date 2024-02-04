@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #005ea5; /* Government-like blue */
+}
+
+/* Navigation and Layout */
+nav {
+    background: #005ea5;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections and Articles */
+section, article {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+button {
+    background: #00703c; /* Government-like green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #005ea5; /* Change on hover */
+}
+
+/* Icons */
+i {
+    margin-right: 8px;
+}
+
+/* Utility Classes */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #005ea5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.full-width-button {
+    width: 100%;
+    background-color: #00703c; /* Green background */
+    /* Other styling as needed */
+}
+
+.gov-style-select, .gov-style-button, .gov-style-form input, .gov-style-form label {
+    font-size: 1em;
+    padding: 8px;
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+}
+
+.gov-style-button {
+    background-color: #004a7f; /* Government blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gov-style-button:hover {
+    background-color: #003366; /* Darker shade on hover */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Corrected viewport tag -->
+    <title>Passport Renewal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Passport Renewal Form</h1>
+    
+    <!-- User Selection Dropdown -->
+    <label for="userSelect">Select User:</label>
+    <select id="userSelect" onchange="autoFillForm()" class="gov-style-select">
+        <option value="">Select a user</option>
+        <!-- Options will be dynamically populated by autofill.js -->
+    </select>
+
+    <!-- Passport Renewal Form -->
+    <form id="renewalForm" class="gov-style-form" onsubmit="event.preventDefault(); formSubmitted();">
+        <!-- Photo Upload -->
+        <div class="form-group">
+            <label for="photoUpload">Upload Photo:</label>
+            <input type="file" id="photoUpload" name="photoUpload" accept="image/*">
+        </div>
+        <!-- Title Selection -->
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <select id="title" name="title" class="gov-style-select">
+                <option value="">Select a title</option>
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Dr">Dr</option>
+            </select>
+        </div>
+        <!-- First Name Input -->
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <!-- Last Name Input -->
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <!-- Date of Birth Input -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="gov-style-button">Submit</button>
+    </form>
+
+    <script src="autofill.js"></script>
+    <script>
+        function formSubmitted() {
+            alert("Passport renewal form submitted!");
+            // Here you can add additional code to handle form submission,
+            // such as sending the data to a server or redirecting to another page.
+        }
+    </script>
+</body>
+</html>

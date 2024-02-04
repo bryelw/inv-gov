@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Available Services</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Identifier (e.g. Reg. Plate)</th>
+                <th>Expiry Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Passport Renewal -->
+            <tr>
+                <td><i class="fas fa-passport"></i> Passport Renewal</td>
+                <td>Passport No. 123456789</td>
+                <td>01/01/2024</td>
+                <td><a href="passport-renewal.html"><button>Renew</button></a></td>
+            </tr>
+            <!-- Driver's License -->
+            <tr>
+                <td><i class="fas fa-car"></i> Driver's License</td>
+                <td>License No. A1234567</td>
+                <td>01/01/2025</td>
+                <td><a href="drivers-license-renewal.html"><button>Renew</button></a></td>
+            </tr>
+            <!-- Vehicle Tax -->
+            <tr>
+                <td><i class="fas fa-truck"></i> Vehicle Tax</td>
+                <td>Reg. Plate VX13 FLE</td>
+                <td>01/06/2024</td>
+                <td><a href="vehicle-tax.html"><button>Renew</button></a></td>
+            </tr>
+            <!-- Additional services can be added here -->
+        </tbody>
+        <!-- Add Service Row -->
+        <tfoot>
+            <tr>
+                <td colspan="4" class="text-center">
+                    <a href="add-services.html"><button class="full-width-button"><i class="fas fa-plus"></i> Add Service</button></a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- Return to Homepage Button -->
+    <button onclick="window.location.href='homepage.html';" class="gov-style-button">Return to Homepage</button>
+</body>
+</html>
